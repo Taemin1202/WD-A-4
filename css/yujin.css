@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color:  #f2f2f2;
+    color: #333333;
+}
+
+/* <--- reset ---> */
+
+.wrap{
+    width: 1200px;
+    height: 700px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    /* background-color: yellowgreen; */
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* padding-top: 30px; */
+}
+
+.logo a{
+
+}
+
+.logo a img{
+    margin-top: 30px;
+}
+
+.nav{
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.main{
+    
+}
+
+.main > li{
+    /* border: 1px solid black; */
+    float: left;
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff5050;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.main > li:hover > a{
+    /* background-color: #5b9bd5; */
+    background-color: #ffc000;
+    color: #333333;
+}
+
+.sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 21;
+}
+
+.sub li{
+
+}
+
+.sub li a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #5b9bd5;
+}
+
+.sub li a:hover{
+    background-color: #ffc000;
+}
+
+/* header 끝 */
+
+.sub_bg{
+    display: none;
+    position: absolute;
+    width: 1200px;
+    height: 150px;
+    background-color: #5b9bd5;
+    /* top: 100px; */
+    left: 0;
+    z-index: 20;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    /* background-color: turquoise; */
+}
+
+.view{
+    height: 300px;
+}
+
+.fade{
+    height: 300px;
+    position: relative;
+}
+
+.fade li{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+
+.fade li a{
+
+}
+
+.fade li a img{
+
+}
+
+.contents{
+
+}
+
+.contents > div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.contents h2{
+    width: 100px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    background-color: #ff5050;
+    border-radius: 10px 10px 0 0;
+}
+
+.contents ul{
+    width: 100%;
+    height: 165px;
+    background-color: cornsilk;
+    border-radius: 0 10px 10px 10px;
+    padding: 10px;
+}
+
+.notice{
+
+}
+
+.notice ul{
+
+}
+
+.notice ul li{
+    height: calc((165px - 20px) / 4);
+    line-height: calc((165px - 20px) / 4);
+    border-bottom: 1px dotted #333333;
+}
+
+.notice ul li a{
+    float: left;
+    width: 75%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span{
+    float: right;
+}
+
+.gallery{
+
+}
+
+.gallery ul{
+
+}
+
+.gallery ul li{
+    display: inline-block;
+}
+
+.gallery ul li a{
+
+}
+
+.gallery ul li a img{
+    opacity: 0.75;
+}
+
+.gallery ul li a img:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.baro{
+
+}
+
+.baro p{
+    height: 165px;
+    background-color: cornsilk;
+    border-radius: 0 10px 10px 10px;
+    padding: 4px 0;
+}
+
+.baro p a{
+
+}
+
+.baro p a img{
+
+}
+
+/* container 끝 */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+}
+
