@@ -22,4 +22,12 @@ $(function(){
         // console.log(n);
         $(".fade li").eq(n).fadeIn().siblings().fadeOut();
     }, 2500);
+
+    $(".p_up").click(function(){
+        $(".popup").show();
+    })/* p_up click */
+
+    $(".close").click(function(){
+        $(".popup").hide();
+    })/* close click */
 })

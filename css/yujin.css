@@ -264,6 +264,79 @@ body{
 .footer{
     width: 100%;
     height: 100px;
-    background-color: violet;
+    /* background-color: violet; */
 }
 
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.f_left > div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_menu{
+    border-bottom: 1px solid #333333;
+}
+
+.f_menu a:hover{
+    text-decoration: underline;
+}
+
+.f_menu a::after{
+    content: "|";
+    padding: 0 10px;
+}
+
+.f_menu a:last-child::after{
+    display: none;
+}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.family select{
+    width: 150px;
+    height: 50px;
+}
+
+/* footer 끝 */
+
+.popup{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 10px solid #5b9bd5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+}
+
+.popup h3{
+    border-bottom: 3px double #ff5050;
+}
+
+.popup p{
+    padding-top: 20px;
+    line-height: 1.7;
+}
+
+.popup .close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+}
